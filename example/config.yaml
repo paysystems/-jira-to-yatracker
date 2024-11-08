@@ -1,0 +1,11 @@
+project_and_queue_key: "COMMON"
+final_status_for_wip_issue: "closedMeta"
+connection:
+  jira:
+    url: "https://org.atlassian.net"
+    username: "username@email.com"
+    api_token: "secret"
+  yandex_tracker:
+    token: "secret"
+    org_id: "secret"
+    account_type: "ya360"

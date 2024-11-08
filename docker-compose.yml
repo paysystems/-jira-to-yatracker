@@ -1,0 +1,9 @@
+services:
+  migrator:
+    build: .
+    volumes:
+      - ./src:/opt/app/src
+      - ./example/mapping.ini:/opt/app/settings/mapping.ini
+      - ./example/config.yaml:/opt/app/settings/config.yaml
+    command: "--config ./settings/config.yaml --mapping ./settings/mapping.ini"
+    env_file: ./example/.env

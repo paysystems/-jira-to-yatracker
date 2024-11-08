@@ -1,0 +1,7 @@
+yatracker~=2024.4.2
+jira2markdown==0.3.7
+tenacity==9.0.0
+python-dateutil==2.9.0.post0
+jira~=3.8.0
+PyYAML==6.0.2
+yandex_tracker_client~=2.8
