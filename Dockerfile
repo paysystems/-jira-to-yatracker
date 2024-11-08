@@ -11,9 +11,8 @@ RUN apt-get update \
 ENV PYTHONDONTWRITEBYTECODE 1 \
     PYTHONUNBUFFERED 1
 
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-
-COPY entrypoint.sh  ./
+COPY requirements.txt entrypoint.sh ./
+RUN pip install -r requirements.txt \
+    && chmod +x ./entrypoint.sh
 
 ENTRYPOINT ["./entrypoint.sh"]
