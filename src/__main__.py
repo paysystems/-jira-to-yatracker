@@ -305,7 +305,7 @@ async def fill_common_fields(yt_issue_id: str, jira_issue: jira.Issue) -> None:
         assignee=jira_to_yt_mapper.jira_user_to_yt_user_id(
             jira_issue.fields.assignee, yt_old_client
         ),
-        author=jira_to_yt_mapper.jira_user_to_yt_user_id(
+        created_by=jira_to_yt_mapper.jira_user_to_yt_user_id(
             jira_issue.fields.creator, yt_old_client
         ),
         description=(
